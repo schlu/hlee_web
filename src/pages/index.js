@@ -104,13 +104,7 @@ const IndexPage = () => (
             </p>
           </div>
           <div class="mb-10">
-            <h3 class="text-2xl font-bold mb-2">Languages / Concepts</h3>
-            <p>
-              
-            </p>
-          </div>
-          <div>
-            <h3 class="text-2xl font-bold mb-2">Apple Frameworks</h3>
+            <h3 class="text-2xl font-bold mb-2">Tools</h3>
             <p>
               
             </p>

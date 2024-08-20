@@ -70,52 +70,54 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
-  <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
+    <main class="bg-gray-100">
+      <div class="container mx-auto py-10 px-5 md:px-0">
+        <div class="bg-white shadow-md rounded-lg p-10">
+          <div class="flex flex-col md:flex-row items-center mb-10">
+            <StaticImage
+            class="rounded-full h-40 w-40 mb-5 md:mb-0 md:mr-10"
+              src="../images/profile.jpeg"
+              loading="eager"
+              width={64}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt=""
+              style={{ marginBottom: `var(--space-3)` }}
+            />
+            <div>
+              <h1 class="text-3xl font-bold mb-2">Heather Lee, ACP</h1>
+              <h2 class="text-xl text-gray-600 mb-5">
+                Digital Magaizine Layout and Design Since 2014
+              </h2>
+              <p class="mb-5">
+                As an experienced magazine designer, I can help with your project.
+              </p>
+              <Link to='mailto:hjleeacp@gmail.com' class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Hire me
+              </Link>
+            </div>
+          </div>
+          <div class="mb-10">
+            <h3 class="text-2xl font-bold mb-2">Skills</h3>
+            <p>
+              
+            </p>
+          </div>
+          <div class="mb-10">
+            <h3 class="text-2xl font-bold mb-2">Languages / Concepts</h3>
+            <p>
+              
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Apple Frameworks</h3>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 )
 
 /**

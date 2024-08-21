@@ -87,7 +87,7 @@ const IndexPage = () => (
             <div>
               <h1 class="text-3xl font-bold mb-2">Heather Lee, ACP</h1>
               <h2 class="text-xl text-gray-600 mb-5">
-                Digital Magaizine Layout and Design Since 2014
+                Digital Magazine Layout and Design Since 2014
               </h2>
               <p class="mb-5">
                 As an experienced magazine designer, I can help with your project.

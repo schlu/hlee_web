@@ -25,7 +25,7 @@ const IndexPage = () => (
               <p class="mb-5">
                 As an experienced magazine designer, I can assist you with your project.
               </p>
-              <Link to='mailto:hjleeacp@gmail.com' class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              <Link to='mailto:hleeacp@gmail.com' class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 Hire me
               </Link>
             </div>
